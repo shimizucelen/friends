@@ -28,6 +28,7 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link media="screen and (min-width: 991px)" href="css/lg.css" rel="stylesheet">
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -62,41 +63,55 @@
         <!-- end of mobile menu toggle button -->
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-5 text-left">
-                <li class="nav-item">
+            <ul class="navbar-nav ml-5 text-left font1" style="font-size: 1.1rem">
+                <li class="nav-item px-3">
                     <a class="nav-link page-scroll" href="#header" style="color: #1381D1">ホーム<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#" style="color: #1381D1">プラン</a>
+                <li class="nav-item px-3">
+                    <a class="nav-link page-scroll" href="plan.html" style="color: #1381D1">プラン・料金</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#" style="color: #1381D1">料金</a>
+                <li class="nav-item px-3">
+                    <a class="nav-link page-scroll" href="service.html" style="color: #1381D1">サービス</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#" style="color: #1381D1">サービス</a>
+                <li class="nav-item px-3">
+                    <a class="nav-link page-scroll" href="#" style="color: #1381D1">お見積もり</a>
                 </li>
             </ul>
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
-    <div class="col-lg-12 bban" style="z-index: 100">
+    <div class="d-none d-lg-block bban" style="z-index: 100">
         <div class="row">
-            <div class="col-12 col-lg-9 text-center my-3">
-                <div class="row  px-lg-5">
+            <div class="col-12 col-lg-8 text-center my-3 ">
+                <div class="row">
                     <div class="col-12 col-lg-6">
-                        <img class="img-fluid my-sm-1" src="images/tan.png" style="width: 400px">
+                        <img class="img-fluid my-3" src="images/tan.png" style="width: 400px;margin-left: 20px">
                     </div>
                     <div class="col-12 col-lg-6">
-                        <img class="img-fluid" src="images/kos.png" style="width: 400px">
+                        <img class="img-fluid my-3" src="images/kos.png" style="width: 400px">
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 text-center mt-3">
+            <div class="col-12 col-lg-4 text-center mt-3">
 
                 <p style="margin: 0">お気軽にお問い合わせ下さい♪</p>
                 <a href="#" style="text-decoration: none">
-                    <img class="" style="width: 50px" src="images/tm.png">
-                    <span class="h1" style="color: black;">0120-72-1151</span>
+                    <img class="" style="width: 90%" src="images/teltop.png">
+                </a>
+                <p class="job-title">受付時間　8:00〜24:00</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="d-block d-lg-none bban" style="z-index: 100">
+        <div class="row">
+
+            <div class="col-12 text-center mt-3">
+
+                <p style="margin: 0">お気軽にお問い合わせ下さい♪</p>
+                <a href="#" style="text-decoration: none">
+                    <img class="" style="width: 90%" src="images/teltop.png">
                 </a>
                 <p class="job-title">受付時間　8:00〜24:00</p>
             </div>
@@ -150,7 +165,7 @@
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="" style="width:80%;min-width: 350px;" src="images/ban9.png" alt="alternative">
+                    <img class="" style="width:100%;min-width: 350px;" src="images/ban9.png" alt="alternative">
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -184,7 +199,7 @@
                     </div> <!-- end of image-container -->
                     <!-- end of video preview -->
 
-                    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    <p class="pcf1">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -207,37 +222,36 @@
 
 
     <!-- Services -->
-    <div id="services" class="cards-1">
+    <div id="services" style="padding-bottom: 100px">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <!-- Card -->
-                    <div class="card bgib">
-                        <div class="card-body">
+                <!-- Card -->
+                <div class="col-12 col-lg-6" style="margin-bottom: 50px">
+                    <div class="card-body text-center bgib mx-3 py-5 font1" style="letter-spacing: 5px;">
 
-                            <p style="color: white">小学生以下の<br>お子様がいる方限定</p>
+                        <h6 class="font1" style="color: white">小学生以下の<br>お子様がいる方限定</h6>
 
-                            <h4 style="color: white" class="card-title">子育て応援プラン</h4>
+                        <h2 style="color: white" class="card-title">子育て応援プラン</h2>
 
-                            <p style="color: white">女性が荷造りを無料でお手伝い！</p>
-                            <a class="btn-solid-lg page-scroll" href="#services">もっと詳しく　▶︎</a>
-                        </div>
+                        <h6 class="font1" style="color: white;padding-bottom: 10px">女性が荷造りを無料でお手伝い！</h6>
+
+
+                        <a class="btn-solid-lg page-scroll" href="#services">もっと詳しく　▶︎</a>
                     </div>
-                    <!-- end of card -->
-                    <!-- Card -->
-                    <div class="card bgia">
-                        <div class="card-body">
-                            <p style="color: white">ナジックにお住まいの<br>学生様へ</p>
+                </div>
+                <!-- end of card -->
+                <!-- Card -->
+                <div class="col-12 col-lg-6">
+                    <div class="card-body text-center bgia mx-3 py-5 font1" style="letter-spacing: 5px;">
+                        <h6 class="font1" style="color: white">ナジックにお住まいの<br>学生様へ</h6>
 
-                            <h4 style="color: white" class="card-title">新生活応援<br>学割キャンペーン</h4>
+                        <h2 style="color: white" class="card-title">新生活応援<br>学割キャンペーン</h2>
 
 
-                            <a class="btn-solid-lg page-scroll" href="#services">もっと詳しく　▶︎</a>
-                        </div>
+                        <a class="btn-solid-lg page-scroll" href="#services">もっと詳しく　▶︎</a>
                     </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
+                </div>
+                <!-- end of card -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
@@ -257,63 +271,63 @@
             </div> <!-- end of row -->
             <div class="row pt-3">
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 p-1">
                     <div class="card" style="margin-bottom: 1rem">
-                        <div class="card-body" style="padding: ">
-                            <div class="card-subtitle" style="margin: 0">なるべく安くお引越ししたい方へ</div>
+                        <div class="card-body bs" style="padding: 0.5rem;height: 300px;">
+                            <div class="card-subtitle font1" style="margin: 0;">なるべく安くお引越ししたい方へ</div>
 
                             <div class="price" style="padding: 20px 0px">
                                 <img class="" style="width:50%" src="images/a.png" alt="alternative">
                             </div>
 
-                            <div class="card-title" style="margin: 0">標準</div>
-                            <div class="card-subtitle" style="margin: 0">プラン</div>
+                            <div class="card-title" style="margin: 0;font-size: 1.3rem; letter-spacing: 3px">標準</div>
+                            <div class="card-subtitle font1" style="margin: 0">プラン</div>
                             <img class="" style="width:100%" src="images/a1.png" alt="alternative">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-lg-3 p-1">
                     <div class="card" style="margin-bottom: 1rem">
-                        <div class="card-body">
-                            <div class="card-subtitle" style="margin: 0">荷造りから手伝います</div>
+                        <div class="card-body bs" style="padding: 0.5rem;height: 300px;">
+                            <div class="card-subtitle font1" style="margin: 0">荷造りから手伝います</div>
 
                             <div class="price" style="padding: 20px 0px">
                                 <img class="" style="width:50%" src="images/b.png" alt="alternative">
                             </div>
 
-                            <div class="card-title" style="margin: 0">小物荷造り</div>
-                            <div class="card-subtitle" style="margin: 0">プラン</div>
+                            <div class="card-title" style="margin: 0;font-size: 1.3rem; letter-spacing: 3px">小物荷造り</div>
+                            <div class="card-subtitle font1" style="margin: 0">プラン</div>
                             <img class="" style="width:100%" src="images/b1.png" alt="alternative">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 p-1">
                     <div class="card" style="margin-bottom: 1rem">
-                        <div class="card-body" style="padding: ">
-                            <div class="card-subtitle" style="margin: 0">荷造りから荷解きまで！</div>
+                        <div class="card-body bs" style="padding: 0.5rem;height: 300px;">
+                            <div class="card-subtitle font1" style="margin: 0">荷造りから荷解きまで！</div>
 
                             <div class="price" style="padding: 20px 0px">
                                 <img class="" style="width:50%" src="images/c.png" alt="alternative">
                             </div>
 
-                            <div class="card-title" style="margin: 0">小物荷造り荷解き</div>
-                            <div class="card-subtitle" style="margin: 0">プラン</div>
+                            <div class="card-title" style="margin: 0;font-size: 1.3rem; letter-spacing: 3px">小物荷造り荷解き</div>
+                            <div class="card-subtitle font1" style="margin: 0">プラン</div>
                             <img class="" style="width:100%" src="images/c1.png" alt="alternative">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 p-1">
                     <div class="card" style="margin-bottom: 1rem">
-                        <div class="card-body" style="padding: ">
-                            <div class="card-subtitle" style="margin: 0">大型家電の処分もお任せ！</div>
+                        <div class="card-body bs" style="padding: 0.5rem;height: 300px;">
+                            <div class="card-subtitle font1" style="margin: 0">大型家電の処分もお任せ！</div>
 
                             <div class="price" style="padding: 20px 0px">
                                 <img class="" style="width:50%" src="images/d.png" alt="alternative">
                             </div>
 
-                            <div class="card-title" style="margin: 0">ゴミ処理</div>
-                            <div class="card-subtitle" style="margin: 0">プラン</div>
+                            <div class="card-title" style="margin: 0;font-size: 1.3rem; letter-spacing: 3px">ゴミ処理</div>
+                            <div class="card-subtitle font1" style="margin: 0">プラン</div>
                             <img class="" style="width:100%" src="images/d1.png" alt="alternative">
                         </div>
                     </div>
@@ -343,7 +357,7 @@
                 <div class="col-lg-12">
                     <img class="" style="width: 100px" src="images/kuruma.png" alt="alternative">
                     <h2 style="color: #00C2D1">\ 京都の引っ越しならフレンズにお任せください！ /</h2>
-                    <p class="p-heading p-large" style="padding: 20px 0px">当社はより引越しレベルの向上のため、
+                    <p class="p-heading p-large pcf1" style="padding: 20px 0px">当社はより引越しレベルの向上のため、
 
                         大手引越しセンターや引越社などから
                         <span class="d-lg-block d-none"></span>
@@ -364,22 +378,26 @@
                     <div class="team-member" style="width: 20rem">
                         <img class="img-fluid" src="images/p1.png">
                         <h2 style="color: #00C2D1;margin-top: 1rem">安い ◎</h2>
-                        <p class="job-title">大手引越し業者より<br>圧倒的に安いプランをご案内</p>
+                        <p class="job-title pcf3">大手引越し業者より<br>圧倒的に安いプランをご案内</p>
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
 
                     <!-- Team Member -->
                     <div class="team-member" style="width: 20rem">
-                        <img class="img-fluid" src="images/p1.png">
-                        <h2 style="color: #00C2D1;margin-top: 1rem">安い ◎</h2>
-                        <p class="job-title">大手引越し業者より<br>圧倒的に安いプランをご案内</p>
+                        <img class="img-fluid" src="images/p2.png">
+                        <h2 style="color: #00C2D1;margin-top: 1rem">丁寧 ◎</h2>
+                        <p class="job-title pcf3">丁寧な作業で<br>
+                            お客様の荷物を大事に<br>
+                            お運び致します</p>
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
                     <!-- Team Member -->
                     <div class="team-member" style="width: 20rem">
-                        <img class="img-fluid" src="images/p1.png">
-                        <h2 style="color: #00C2D1;margin-top: 1rem">安い ◎</h2>
-                        <p class="job-title">大手引越し業者より<br>圧倒的に安いプランをご案内</p>
+                        <img class="img-fluid" src="images/p3.png">
+                        <h2 style="color: #00C2D1;margin-top: 1rem">24時間 ◎</h2>
+                        <p class="job-title pcf3">引越しのお時間は理由を問わず<br>
+                            24時間いつでもお伺いします<br>
+                            夜中のお見積もOK
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
 
@@ -425,7 +443,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container ml-lg-5">
-                        <p class="ml-lg-5">引越しのフレンズでは、
+                        <p class="pcf2 font1">引越しのフレンズでは、
                             <span class="d-lg-block d-none"></span>
                             京都と大阪を主な対応エリアとしています。
                             <span class="d-lg-block d-none"></span>
@@ -446,7 +464,7 @@
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
-                    <div class="image-container">
+                    <div class="image-container" style="padding-bottom: 50px">
                         <img class="img-fluid" src="images/map.png">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
@@ -500,8 +518,8 @@
     <div class="slider-1 bgB" style="padding-top: 50px;padding-bottom: 0;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 pt-2">
-                    <h2 style="color: white">お見積もり・お問い合わせ</h2>
+                <div class="col-lg-12 pt-2 pcf4">
+                    <h3 style="color: white">お見積もり・お問い合わせ</h3>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -510,8 +528,8 @@
     <div class="slider-1 bgB" style="padding-top: 50px;padding-bottom: 0;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 pt-2">
-                    <h2 style="border: solid 2px;padding: 1%;color: white">お見積もりは無料です</h2>
+                <div class="col-lg-12 pt-2 pcf4">
+                    <h3 style="border: solid 2px;padding: 1.5%;color: white;font-size: 1.6rem">お見積もりは無料です</h3>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -524,38 +542,35 @@
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="text-container text-center">
-                        <p style="color: white">
+                        <h4 style="color: white">
                             24時間受付中！
-                        </p>
+                        </h4>
                         <img class="" style="width: 200px" src="images/mail.png">
-                        <div class="slider-1" style="padding-bottom: 15px">
+                        <div class="slider-1" style="padding-bottom: 15px;padding-top: 20px">
                             <div class="container">
-                                <a class="btn-con page-scroll" href="#" style="white-space: nowrap"> <img class="" style="width: 15px" src="images/tmw.png">メールフォームはこちら　▶︎</a>
+                                <a class="page-scroll" href="#" style="white-space: nowrap"><img class="" style="width: 100%" src="images/mailb.png"></a>
                             </div> <!-- end of container -->
                         </div> <!-- end of slider-1 -->
-                        <p style="color: black">
+                        <h5 style="color: black;font-size: 1rem">
                             こちらのメールフォームをご利用ください
-                        </p>
+                        </h5>
                         <!-- end of customers -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-12 col-lg-6">
                     <div class="text-container text-center">
-                        <p style="color: white">
+                        <h4 style="color: white">
                             受付時間　8:00〜24:00　
-                        </p>
+                        </h4>
                         <img class="" style="width: 200px" src="images/tel.png">
-                        <div class="slider-1" style="padding-bottom: 15px">
+                        <div class="slider-1" style="padding-bottom: 15px;padding-top: 20px">
                             <div class="container">
-
-                                <a class="btn-con page-scroll" href="#" style="white-space: nowrap">
-                                    <img class="" style="width: 15px" src="images/tm.png">
-                                    0120-72-1151 </a>
+                                <a class="page-scroll" href="#" style="white-space: nowrap"><img class="" style="width: 100%;" src="images/telb.png"></a>
                             </div> <!-- end of container -->
                         </div> <!-- end of slider-1 -->
-                        <p style="color: black">
-                            こちらのメールフォームをご利用ください
-                        </p>
+                        <h5 style="color: black;font-size: 1rem">
+                            お気軽にお電話ください
+                        </h5>
                         <!-- end of customers -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -575,7 +590,7 @@
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-7">
-                    <div class="footer-col middle row">
+                    <div class="footer-col middle row font1" style="font-size: 1.1rem">
 
 
                         <a class="nav-link page-scroll" href="#header" style="text-decoration: none">ホーム</a>
@@ -605,7 +620,7 @@
 
 
     <!-- Copyright -->
-    <div class="copyright" style="padding-bottom: 3rem">
+    <div class="copyright" style="padding-bottom: 5rem">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
